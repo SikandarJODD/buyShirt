@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+$bro :'Montserrat',
+sans-serif;
+$poppins: 'Poppins', sans-serif;
+$animate : all 0.3s ease;
+
+.main_logo {
+    padding: 6px 10px;
+    border: 1px solid black;
+
+    transition: $animate;
+
+
+    a {
+        text-transform: uppercase;
+        font-family: 'Audiowide', cursive;
+        transition: all 0.3s ease;
+        background: linear-gradient(to right, #16b6fb, #f3f3f4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // color: #e4e4e4;
+
+    }
+
+    background: #232323;
+
+    &:hover {
+        transition: $animate;
+        background: #fdfdfd;
+
+        a {
+            transition: $animate;
+            background: linear-gradient(to right, #1a1a1a, #232323ef);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.navbar {
+    border-bottom: 1px solid black;
+}
+
+.navbar-nav {
+    .nav-item {
+        a {
+            margin: 0px 5px;
+            color: rgb(33, 33, 33) !important;
+            font-family: $poppins;
+            transition: $animate;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            padding: 6px 15px !important;
+            border: 1px solid transparent;
+
+            &:hover {
+                transition: $animate;
+                color: #000000;
+                // background: #5bb8f630;
+                background: #6aeafb;
+                border: 1px solid #232323;
+                transform: translateX(-3px) translateY(-3px);
+                box-shadow: 3px 3px #232323;
+            }
+        }
+    }
+}
+
+// main Content : slogan 
+.main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    border-top: none;
+    flex-direction: column;
+    background: #ffffff;
+    background-image: url("/back_cool.svg");
+    // height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    // background: url("/cool-background.svg") center center no-repeat;
+    // background: linear-gradient(to left, white, rgb(179, 237, 255));
+    border-bottom: 1px solid black;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #232323;
+        padding: 70px;
+        border-radius: 6px;
+        background: white;
+        box-shadow: 11px 11px #232323;
+        // background-image: url("/cool-background.svg");
+        background: linear-gradient(to right, white, rgb(179, 237, 255));
+
+        h1 {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: #414141;
+        }
+
+        .buyNow {
+            padding: 10px 15px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            background: rgb(121, 237, 255);
+            font-weight: bold;
+            font-family: $poppins;
+
+            &:hover {
+                transform: translate(-5px, -5px);
+                transition: $animate;
+                box-shadow: 6px 6px #232323;
+            }
+        }
+
+        margin-top: 100px;
+        z-index: 2;
+    }
+
+    .main_img {
+        z-index: 1;
+        position: absolute;
+        top: 20px;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+}

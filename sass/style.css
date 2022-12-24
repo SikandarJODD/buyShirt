@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.main_logo {
+  padding: 6px 10px;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+  background: #232323;
+}
+.main_logo a {
+  text-transform: uppercase;
+  font-family: "Audiowide", cursive;
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #16b6fb, #f3f3f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_logo:hover {
+  transition: all 0.3s ease;
+  background: #fdfdfd;
+}
+.main_logo:hover a {
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #1a1a1a, rgba(35, 35, 35, 0.937254902));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+}
+
+.navbar-nav .nav-item a {
+  margin: 0px 5px;
+  color: rgb(33, 33, 33) !important;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 6px 15px !important;
+  border: 1px solid transparent;
+}
+.navbar-nav .nav-item a:hover {
+  transition: all 0.3s ease;
+  color: #000000;
+  background: #6aeafb;
+  border: 1px solid #232323;
+  transform: translateX(-3px) translateY(-3px);
+  box-shadow: 3px 3px #232323;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  border-top: none;
+  flex-direction: column;
+  background: #ffffff;
+  background-image: url("/back_cool.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+.main_content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #232323;
+  padding: 70px;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 11px 11px #232323;
+  background: linear-gradient(to right, white, rgb(179, 237, 255));
+  margin-top: 100px;
+  z-index: 2;
+}
+.main_content div h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.main_content div p {
+  font-size: 1.7rem;
+  color: #414141;
+}
+.main_content div .buyNow {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  background: rgb(121, 237, 255);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.main_content div .buyNow:hover {
+  transform: translate(-5px, -5px);
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px #232323;
+}
+.main_content .main_img {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid black;
+}/*# sourceMappingURL=style.css.map */
