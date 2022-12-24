@@ -11,7 +11,7 @@ Install Project with git
 
 ```
 
-![Logo](relative/LogoMain.png)
+![Screenshot](LogoMain.png)
 
 ## Features
 
