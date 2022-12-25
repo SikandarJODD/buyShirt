@@ -12,6 +12,7 @@ Install Project with git
 ```
 
 ![Screenshot](LogoMain.png)
+![Screenshot](mainPage1.png)
 
 ## Features
 
